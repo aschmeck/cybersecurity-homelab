@@ -43,11 +43,10 @@ The Windows machine will forward logs to the Wazuh manager via the agent service
 3. After installation, **open Command Prompt as Administrator** and run:
 
 ```cmd
-"C:\Program Files (x86)\ossec-agent\agent-auth.exe" -m 192.168.56.101 -k "PASTE-YOUR-KEY"
+"C:\Program Files (x86)\ossec-agent\agent-auth.exe" -m 192.168.56.30 -k "the very very long key"
 ```
 
-- `192.168.56.101` is the IP of the Ubuntu Wazuh Manager
-- Replace `"PASTE-YOUR-KEY"` with the key generated using the `manage_agents` tool on the manager
+- `192.168.56.30` is the IP of the Ubuntu Wazuh Manager
 
 4. Start the Wazuh service:
 
@@ -68,39 +67,19 @@ sudo /var/ossec/bin/agent_control -l
 
 By default, Wazuh only collects basic event logs. To expand this, I edited the configuration file to monitor key event channels.
 
-### ✏️ Edited File
+I also saw that several event IDs were being excluded that I very much wanted to be included so I removed those from the query to ensure that I gathered the correct logs for events:
+- 4670 - Permissions changed on an object.
+- 5152 - Dropped packets
+- 5157 - Dropped Connections
+- 5447 - Firewall rules changed
 
+Since I will be doing various pentest related activities on this VM, I wanted to be able to accurately detect and log what has been done. The end goal is to both strengthen my own skills in pentesting and defense.
 ```
 C:\Program Files (x86)\ossec-agent\ossec.conf
 ```
 
 ### 🪪 Key Sections Added
-
-```xml
-<localfile>
-  <log_format>eventchannel</log_format>
-  <location>Security</location>
-</localfile>
-
-<localfile>
-  <log_format>eventchannel</log_format>
-  <location>System</location>
-</localfile>
-
-<localfile>
-  <log_format>eventchannel</log_format>
-  <location>Application</location>
-</localfile>
-
-<localfile>
-  <log_format>eventchannel</log_format>
-  <location>Microsoft-Windows-PowerShell/Operational</location>
-</localfile>
-```
-
-📌 You can add additional logs such as `Defender`, `RDP`, or `Sysmon` if configured.
-
----
+![image](https://github.com/user-attachments/assets/8372c508-3084-4e70-a071-ae3e2c7d8569)
 
 ### 🔄 Restart the Agent
 
