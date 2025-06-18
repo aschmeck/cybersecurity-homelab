@@ -39,7 +39,7 @@ Welcome to my cybersecurity homelab repository. This project demonstrates my han
 
 Each machine is documented in detail, including screenshots, commands, and configuration files:
 
-- [`ubuntu-wazuh-setup.md`](./ubuntu-wazuh-setup.md)
+- [`ubuntu-confi.md`](./ubuntu-config.md)
 - [`windows-wazuh-setup.md`](./windows-wazuh-setup.md)
 - [`kali-setup.md`](./kali-setup.md)
 
