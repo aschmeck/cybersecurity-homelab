@@ -28,8 +28,6 @@ The Windows 11 VM is part of an internal VirtualBox network and is assigned a st
    ipconfig
    ```
 
-📸 *Screenshot suggestion: IP settings window with static IP configured*
-
 ---
 
 ## 📦 Part 2: Installing and Registering Wazuh Agent
@@ -63,7 +61,6 @@ net start WazuhSvc
 sudo /var/ossec/bin/agent_control -l
 ```
 
-📸 *Screenshot suggestion: Output from `agent_control` showing your Windows agent as Active*
 
 ---
 
@@ -124,7 +121,7 @@ Write-EventLog -LogName Application -Source "WazuhTest" -EntryType Information -
 
 Search the Wazuh Dashboard for the event using the `agent.name` or log ID.
 
-📸 *Screenshot suggestion: Log entry visible in Wazuh dashboard*
+
 
 ---
 
