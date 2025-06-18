@@ -75,7 +75,7 @@ To verify configuration:
 
 - Ping internal VMs (e.g., Wazuh Manager or Windows VM):
   ```bash
-  ping 192.168.56.30 (Ubuntu Server)
+  ping 192.168.56.30 (Internal Ubuntu Server)
   ```
 
 - Confirm outbound internet access:
