@@ -17,7 +17,7 @@ The Windows 11 VM is part of an internal VirtualBox network and is assigned a st
 3. Select `Internet Protocol Version 4 (TCP/IPv4)` → Click **Properties**
 
 4. Enter static IP details:
-   - IP Address: `192.168.56.105`
+   - IP Address: `192.168.56.20`
    - Subnet Mask: `255.255.255.0`
    - Default Gateway: `192.168.56.1`
    - Preferred DNS: `1.1.1.1`
