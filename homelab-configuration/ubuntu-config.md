@@ -8,8 +8,8 @@ To ensure stable communication over the internal VirtualBox network, I configure
 - Static IP: 192.168.56.30/24
 - Gateway: 192.168.56.1
 - DNS: 1.1.1.1, 8.8.8.8
-📁 Netplan YAML Example
-network:
+
+-network:
   version: 2
   ethernets:
     enp0s8:
@@ -44,7 +44,8 @@ sudo systemctl status wazuh-manager
 Access the dashboard at:
 https://192.168.56.30
 Use the admin credentials displayed after install.
-📸 Screenshot tip: Include a capture of the Wazuh Dashboard after login for visual context.
+![image](https://github.com/user-attachments/assets/74ec270e-f83f-4339-8187-27b532a2d1c8)
+
 
 
 🔑 Adding Windows Agent
@@ -57,6 +58,7 @@ agent-auth.exe -m 192.168.56.30 -k <paste-key>
 - Confirm connection:
 sudo /var/ossec/bin/agent_control -l
 
+![image](https://github.com/user-attachments/assets/8d301805-5dde-4cb3-8fbc-1ce3e50ece59)
 
 ✅ Agent status should move from Never connected to Active once logs start flowing.
 
@@ -66,6 +68,7 @@ Tested Sources:
 - Windows Event Logs (Security, System, Application, PowerShell)
 - Simulated Nmap scans from Kali VM
 
+
 ✅ Summary
 This Ubuntu VM now serves as the heartbeat of my homelab SIEM stack:
 - Runs the full Wazuh stack (Manager, Indexer, Dashboard)
@@ -73,5 +76,4 @@ This Ubuntu VM now serves as the heartbeat of my homelab SIEM stack:
 - Detects real-world attack simulations
 - Demonstrates effective log analysis and detection engineering in action
 
-Want help whipping up an architecture diagram or ASCII network map next? I’ve got some artistic flair to spare 🎨👨‍💻
-Just say the word.
+
