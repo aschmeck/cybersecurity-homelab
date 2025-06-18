@@ -39,7 +39,7 @@ Kali is connected to both an external and internal network. The internal adapter
    ```bash
    auto eth1
    iface eth1 inet static
-     address 192.168.56.110
+     address 192.168.56.10
      netmask 255.255.255.0
      gateway 192.168.56.1
      dns-nameservers 1.1.1.1 8.8.8.8
@@ -55,7 +55,6 @@ Kali is connected to both an external and internal network. The internal adapter
    ip a
    ```
 
-📸 *Screenshot suggestion: `ip a` output with eth1 set to 192.168.56.110*
 
 ---
 
@@ -76,20 +75,13 @@ To verify configuration:
 
 - Ping internal VMs (e.g., Wazuh Manager or Windows VM):
   ```bash
-  ping 192.168.56.101
+  ping 192.168.56.30 (Ubuntu Server)
   ```
 
 - Confirm outbound internet access:
   ```bash
   ping google.com
   ```
-
-- Launch Wazuh test scan:
-  ```bash
-  nmap -sS 192.168.56.101
-  ```
-
-📸 *Screenshot suggestion: Successful pings and basic scan output*
 
 ---
 
