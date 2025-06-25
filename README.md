@@ -21,10 +21,10 @@ Welcome to my cybersecurity portfolio, a collection of my hands-on projects, res
 
 ## 📁 Repository Structure
 This portfolio is organized into dedicated branches, each focusing on a distinct aspect of my work:
-- **Homelab Configuration:** Detailed documentation of my personal homelab setup and optimizations.
-- **Homelab Projects:** Various cybersecurity projects built using my homelab environment.
-- **Security+ Notes:** Study materials, notes, and preparation resources for the Security+ certification.
-- **TryHackMe Blue Team:** My progress and hands-on challenges in TryHackMe's Blue Team pathway.
+- [**Homelab Configuration:**](https://github.com/aschmeck/cybersecurity-homelab/tree/main/homelab-configuration) Detailed documentation of my personal homelab setup and optimizations.
+- [**Homelab Projects:**](https://github.com/aschmeck/cybersecurity-homelab/tree/main/homelab-projects) Various cybersecurity projects built using my homelab environment.
+- [**Security+ Notes:**](https://github.com/aschmeck/cybersecurity-homelab/tree/main/security-plus-notes) Study materials, notes, and preparation resources for the Security+ certification.
+- [**TryHackMe Blue Team:**](https://github.com/aschmeck/cybersecurity-homelab/tree/main/tryhackme-notes) My progress and hands-on challenges in TryHackMe's Blue Team pathway.
 
 ## 🎓 Education
 🎓 **Bachelor of Science in Cybersecurity** | Kennesaw State University | May 2025  
