@@ -29,6 +29,7 @@ My approach is practical and layered. Security isn’t theory; it’s architectu
 ## Repository Structure  
 Each directory reflects a different part of the same system. Together they form the practical and academic foundation of my work in cybersecurity.
 
+- **[docs/index.md](./docs/index.md)** - Landing Page and directory for all projects.
 - **[docs/linux-migration](./docs/linux-migration/)** — Documentation of my migration from Windows 11 to Debian 13 as a full-time operating environment, including configuration, hardening, and workflow design.  
 - **[docs/homelab-configuration](./docs/homelab-configuration/)** — Documentation for virtualized infrastructure, firewall setup, and SIEM integration.  
 - **[docs/homelab-projects](./docs/homelab-projects/)** — Focused projects exploring detection logic, network visibility, and automated log analysis.  
