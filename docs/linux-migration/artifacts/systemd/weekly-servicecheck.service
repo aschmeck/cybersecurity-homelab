@@ -1,0 +1,9 @@
+[Unit]
+Description=Log failed systemd services
+Wants=weekly-servicecheck.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl --failed
+StandardOutput=append:/var/log/system-maintenance/weekly-servicecheck.log
+StandardError=append:/var/log/system-maintenance/weekly-servicecheck.log

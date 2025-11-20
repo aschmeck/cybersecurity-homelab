@@ -1,0 +1,27 @@
+NEXT                                 LEFT LAST                              PASSED UNIT                         ACTIVATES
+Thu 2025-11-20 12:30:00 EST      1min 38s Thu 2025-11-20 12:20:22 EST     7min ago sysstat-collect.timer        sysstat-collect.service
+Thu 2025-11-20 12:31:24 EST       3min 2s Thu 2025-11-20 11:35:22 EST    52min ago anacron.timer                anacron.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago daily-diskcheck.timer        daily-diskcheck.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago daily-logcleanup.timer       daily-logcleanup.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago daily-update.timer           daily-update.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago dpkg-db-backup.timer         dpkg-db-backup.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago exim4-base.timer             exim4-base.service
+Fri 2025-11-21 00:00:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago sysstat-rotate.timer         sysstat-rotate.service
+Fri 2025-11-21 00:07:00 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago sysstat-summary.timer        sysstat-summary.service
+Fri 2025-11-21 00:11:21 EST           11h Thu 2025-11-20 11:03:11 EST 1h 25min ago lynis.timer                  lynis.service
+Fri 2025-11-21 00:37:41 EST           12h Thu 2025-11-20 11:03:11 EST 1h 25min ago logrotate.timer              logrotate.service
+Fri 2025-11-21 02:30:00 EST           14h Thu 2025-11-20 11:03:11 EST 1h 25min ago daily-backup.timer           daily-backup.service
+Fri 2025-11-21 03:08:43 EST           14h Mon 2025-11-17 11:37:09 EST       9h ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Fri 2025-11-21 04:59:13 EST           16h Thu 2025-11-20 11:26:22 EST  1h 1min ago man-db.timer                 man-db.service
+Fri 2025-11-21 05:00:20 EST           16h Thu 2025-11-20 11:03:11 EST 1h 25min ago apt-daily.timer              apt-daily.service
+Fri 2025-11-21 06:14:50 EST           17h Thu 2025-11-20 11:03:11 EST 1h 25min ago apt-daily-upgrade.timer      apt-daily-upgrade.service
+Sat 2025-11-22 08:00:00 EST     1 day 19h Sat 2025-11-15 11:57:45 EST            - weekly-servicecheck.timer    weekly-servicecheck.service
+Sat 2025-11-22 09:00:00 EST     1 day 20h Sat 2025-11-15 11:57:45 EST            - weekly-debsums.timer         weekly-debsums.service
+Sun 2025-11-23 02:00:00 EST        2 days Mon 2025-11-17 11:22:19 EST       9h ago weekly-securityscan.timer    weekly-securityscan.service
+Sun 2025-11-23 03:10:05 EST        2 days Mon 2025-11-17 11:23:07 EST       9h ago e2scrub_all.timer            e2scrub_all.service
+Sun 2025-11-23 03:10:34 EST        2 days Mon 2025-11-17 11:22:37 EST       9h ago xfs_scrub_all.timer          xfs_scrub_all.service
+Sun 2025-11-23 07:00:00 EST        2 days Mon 2025-11-17 11:22:19 EST       9h ago weekly-tempclean.timer       weekly-tempclean.service
+Mon 2025-11-24 00:23:29 EST        3 days Mon 2025-11-17 12:03:59 EST       8h ago fstrim.timer                 fstrim.service
+Mon 2025-12-01 00:00:00 EST 1 week 3 days Tue 2025-11-11 15:06:54 EST            - monthly-archive.timer        monthly-archive.service
+
+24 timers listed.

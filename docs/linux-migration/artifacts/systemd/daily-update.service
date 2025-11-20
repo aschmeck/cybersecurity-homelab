@@ -1,0 +1,12 @@
+[Unit]
+Description=Daily system update
+Wants=daily-update.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/apt update
+ExecStart=/usr/bin/apt full-upgrade -y
+StandardOutput=append:/var/log/system-maintenance/daily-update.log
+StandardError=append:/var/log/system-maintenance/daily-update.log
+
+

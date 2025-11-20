@@ -1,0 +1,9 @@
+[Unit]
+Description=Remove logs older than 30 days
+Wants=daily-logcleanup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/find /var/log -type f -name "*.log" -mtime +30 -delete
+StandardOutput=append:/var/log/system-maintenance/daily-logcleanup.log
+StandardError=append:/var/log/system-maintenance/daily-logcleanup.log

@@ -1,0 +1,10 @@
+[Unit]
+Description=Verify package integrity with debsums
+Wants=weekly-debsums.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/debsums -s
+StandardOutput=append:/var/log/system-maintenance/weekly-debsums.log
+StandardError=append:/var/log/system-maintenance/weekly-debsums.log
+

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run local security scan
+Wants=weekly-securityscan.timer
+
+[Service]
+Type=oneshot
+User=user-redacted
+ExecStart=/usr/bin/lynis audit system
+StandardOutput=append:/var/log/system-maintenance/weekly-securityscan.log
+StandardError=append:/var/log/system-maintenance/weekly-securityscan.log

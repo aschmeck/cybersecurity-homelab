@@ -1,0 +1,9 @@
+[Unit]
+Description=Archive configs and logs monthly
+Wants=monthly-archive.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/user-redacted/scripts/archive_configs.sh
+StandardOutput=journal
+StandardError=journal

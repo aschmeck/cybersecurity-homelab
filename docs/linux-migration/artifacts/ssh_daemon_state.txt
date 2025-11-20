@@ -1,0 +1,34 @@
+### SSH Service Status
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2025-11-17 11:22:20 EST; 3 days ago
+ Invocation: 67afd032e6844e71b6a7e24622089208
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 1911 (sshd)
+      Tasks: 1 (limit: 18559)
+     Memory: 1.6M (peak: 2.7M)
+        CPU: 31ms
+     CGroup: /system.slice/ssh.service
+             └─1911 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+### Listening Ports
+
+### Revelvant nftables Rules
+10:		ip saddr ip-redacted/24 iif "virbr0" counter packets 0 bytes 0 accept
+16:		oif "virbr0" ip daddr ip-redacted/24 ct state established,related counter packets 0 bytes 0 accept
+28:		ip saddr ip-redacted/24 ip daddr 224.0.0.0/24 counter packets 2 bytes 80 return
+29:		ip saddr ip-redacted/24 ip daddr 255.255.255.255 counter packets 0 bytes 0 return
+30:		meta l4proto tcp ip saddr ip-redacted/24 ip daddr != ip-redacted/24 counter packets 0 bytes 0 masquerade to :1024-65535
+31:		meta l4proto udp ip saddr ip-redacted/24 ip daddr != ip-redacted/24 counter packets 3 bytes 1905 masquerade to :1024-65535
+32:		ip saddr ip-redacted/24 ip daddr != ip-redacted/24 counter packets 0 bytes 0 masquerade
+59:		tcp dport 22 drop
+60:		tcp dport 22 drop
+69:		iif "wlp0s20f3" tcp dport 22 drop
+70:		tcp dport 22 drop
+71:		ip daddr ip-redacted tcp dport 22 drop
+72:		ip6 daddr fe80::/64 tcp dport 22 drop
+73:		tcp dport 22 drop
+74:		tcp dport 22 ip saddr != 127.0.0.1 drop
+75:		tcp dport 22 ip6 saddr != ::1 drop
+95:		oifname "wlp0s20f3" ip saddr ip-redacted/24 counter packets 0 bytes 0 masquerade

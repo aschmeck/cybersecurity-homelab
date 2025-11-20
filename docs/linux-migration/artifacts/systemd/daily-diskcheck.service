@@ -1,0 +1,9 @@
+[Unit]
+Description=Check disk usage and send alert if over 80%
+Wants=daily-diskcheck.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/smartctl --all /dev/nvme0n1
+StandardOutput=append:/var/log/system-maintenance/daily-diskcheck.log
+StandardError=append:/var/log/system-maintenance/daily-diskcheck.log

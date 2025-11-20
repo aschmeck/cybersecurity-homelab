@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup critical configs and data
+Wants=daily-backup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rsnyc -a --delete /etc /var/backups/etc-backup/
+StandardOutput=append:/var/log/system-maintenance/daily-backup.log
+StandardError=append:/var/log/system-maintenance/daily-backup.log
