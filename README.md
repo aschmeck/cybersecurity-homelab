@@ -1,4 +1,5 @@
 # Cybersecurity Homelab & Portfolio
+## This homelab configuration is now deprecated. I migrated from Windows 11 to Debian 13 and chose to start over again with KVM instead of VirtualBox. Some of this information may be used in the future so I decided to keep the documentation available for my own records.
 
 ## Purpose  
 This repository is the framework and record of my work in cybersecurity—an archive of what I’ve built, tested, and broken down to understand more deeply. It represents my transition from study to practice, where theory meets configuration, and documentation is part of the discipline.  

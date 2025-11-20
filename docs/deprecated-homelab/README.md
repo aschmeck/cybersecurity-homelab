@@ -1,11 +1,12 @@
 
-# 🛡️ Cybersecurity Homelab – Entry-Level Portfolio
+# Cybersecurity Homelab – Entry-Level Portfolio
+## This information is no longer accurate to the current state of my homelab. I migrated from Windows 11 to Debian 13 and decided that I would start over from scratch. I have kept this as a record of what I did as some of it may be useful to me in the future as I configure my new homelab.
 
 Welcome to my cybersecurity homelab repository. This project demonstrates my hands-on experience building and managing a simulated enterprise environment for blue team monitoring and red team simulation. It serves as a portfolio to showcase my technical capabilities as I pursue an entry-level role in cybersecurity.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Build a fully virtualized, networked environment for cybersecurity testing
 - Implement and document real-world SIEM, detection, and response tools
@@ -14,18 +15,18 @@ Welcome to my cybersecurity homelab repository. This project demonstrates my han
 
 ---
 
-## 🧱 Lab Architecture
+## Lab Architecture
 
 | Role         | OS            | Description                              | Network Setup                |
 |--------------|---------------|------------------------------------------|------------------------------|
-| 🔎 SIEM       | Ubuntu 24.04  | Wazuh Manager, Indexer, and Dashboard     | Static IP (Internal Only)    |
-| 🪟 Endpoint   | Windows 11    | Wazuh Agent, logs critical events         | Static IP (Internal Only)    |
-| ⚔️ Attacker   | Kali Linux    | Penetration testing and red team tools    | Static IP (Internal) + DHCP (Bridged) |
-| 🧰 Host       | Windows 11    | Physical host machine running VirtualBox  | Bridged                      |
+| SIEM       | Ubuntu 24.04  | Wazuh Manager, Indexer, and Dashboard     | Static IP (Internal Only)    |
+| Endpoint   | Windows 11    | Wazuh Agent, logs critical events         | Static IP (Internal Only)    |
+| Attacker   | Kali Linux    | Penetration testing and red team tools    | Static IP (Internal) + DHCP (Bridged) |
+| Host       | Windows 11    | Physical host machine running VirtualBox  | Bridged                      |
 
 ---
 
-## 🔧 Key Technologies
+## Key Technologies
 
 - **Wazuh** – Open-source SIEM for log analysis, file integrity monitoring, and intrusion detection
 - **Netplan** – Static IP configuration for Ubuntu
@@ -35,7 +36,7 @@ Welcome to my cybersecurity homelab repository. This project demonstrates my han
 
 ---
 
-## 📂 Documentation
+## Documentation
 
 Each machine is documented in detail, including screenshots, commands, and configuration files:
 
@@ -45,7 +46,7 @@ Each machine is documented in detail, including screenshots, commands, and confi
 
 ---
 
-## 🔬 Next Steps
+## Next Steps
 
 - Add additional log sources (e.g. Sysmon, WinDefender, Linux Audit)
 - Simulate brute-force, privilege escalation, and persistence techniques
@@ -54,7 +55,7 @@ Each machine is documented in detail, including screenshots, commands, and confi
 
 ---
 
-## 🧠 Learning Goals
+## Learning Goals
 
 - Develop blue team detection skills
 - Build evidence of hands-on lab experience
@@ -64,7 +65,7 @@ Each machine is documented in detail, including screenshots, commands, and confi
 ---
 
 
-## 📜 License
+## License
 
 This project is open for educational use and personal development. Feel free to fork and build upon it in your own cybersecurity journey.
 
